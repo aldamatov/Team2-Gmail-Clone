@@ -224,7 +224,7 @@ header.global-nav{
     display: flex;
     flex-flow: column nowrap;
     flex: 0 0 19%;
-    height: 88vh;
+    height: 89vh;
     border: 1px solid black;
     position: sticky;
     top: 60px;
@@ -234,7 +234,6 @@ header.global-nav{
     background-color: #fff;
     padding-right: 10px;
 }
-
 .left-nav .compose{
     margin: 1rem 0.5rem 0 0;
     padding-left: 0.5rem;
@@ -259,35 +258,6 @@ header.global-nav{
 
 
 }
-
-.left-nav .btn a:hover{
-    background-color: #fafafb;
-    box-shadow: 0px 1px 3px 0 rgba(60, 64, 67, 0.3), 0 4px 8px 3px rgba(60, 64, 67, 0.15);
-}
-
-.nav-list .mail-arrow{
-    margin-bottom: 3px;
-    width: 100%;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
-    box-shadow: inset 0px 1px 0px rgba(100, 121, 143, 0.122);
-    position: sticky;
-    top: 0;
-    margin-left: 7px;
-   
-
-   }
-
-.nav-list .mail-arrow h2 {
-    color: #3d3d3d;
-    font-size: 14px;
-    font-weight: 600;
-    padding-bottom: 0.7rem;
-    cursor: pointer;
-    position: sticky;
-    background-color: white;
-    
-}
-
 .compose i{
     margin-top: 10px;
     width: 32px;
@@ -299,8 +269,45 @@ header.global-nav{
     margin-top: -1px;
     color: red;
 }
+
+.left-nav .btn a:hover{
+    background-color: #fafafb;
+    box-shadow: 0px 1px 3px 0 rgba(60, 64, 67, 0.3), 0 4px 8px 3px rgba(60, 64, 67, 0.15);
+}
+
 .nav-list{
-   height: 400px;
+   height: 50%;
+   margin-bottom:0;
+   padding-bottom: 0;
+
+}
+.nav-list .mail-arrow{
+    margin-bottom: 3px;
+    width: 100%;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    box-shadow: inset 0px 1px 0px rgba(100, 121, 143, 0.122);
+    position: sticky;
+    top: 0;
+    
+   }
+
+.nav-list .mail-arrow h2 {
+    color: #3d3d3d;
+    font-size: 14px;
+    font-weight: 600;
+    padding-bottom: 0.7rem;
+    cursor: pointer;
+    position: sticky;
+    background-color: white;
+    
+    
+}
+.nav-list .mail-arrow h2:hover{
+    background-color: rgba(75, 75, 75, 0.1);
+
+}
+.nav-list .mail-arrow h2 i:hover{
+    background-color: rgba(4, 4, 4, 0.1);
 }
 .left-nav .nav-list ul{
     list-style: none;
@@ -312,11 +319,8 @@ header.global-nav{
 .left-nav .nav-list ul:hover{
     overflow-y: scroll;
 }
-.nav-list ul{
-    padding: 0;
-    margin: 0;
-}
-.nav-list ul a{
+
+.nav-list ul li a{
     display: flex;
     align-items: center;
     padding: 3px;
@@ -346,6 +350,7 @@ header.global-nav{
 }
 
 .left-nav .nav-list a i{
+    margin-right: 1.2rem;
     color: #767676;
     font-size: 1rem;
     margin-right: 1.2rem;
@@ -357,30 +362,13 @@ header.global-nav{
 }
 /* Meet Section Start */
 
+
 .meet{
     border-top: 1px solid #e5e5e5;
     border-bottom: 1px solid rgba(0,0,0,0.1);
     box-shadow: inset 0px 1px 0px rgba(100, 121, 143, 0.122);
     padding: 0.5rem 0 0.5rem 1.5rem;
-}
-.nav-list .meet{
-    margin-bottom: 3px;
-    width: 100%;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
-    box-shadow: inset 0px 1px 0px rgba(100, 121, 143, 0.122);
-   
-  
-    margin-left: 7px;
-   }
-
-.nav-list .meet h2 {
-    color: #3d3d3d;
-    font-size: 14px;
-    font-weight: 600;
-    padding-bottom: 0.7rem;
-    cursor: pointer;
-    position: sticky;
-    background-color: white;
+    padding: 0;
     
 }
 .left-nav .meet a{
@@ -388,7 +376,19 @@ header.global-nav{
     color: #555;
     font-size: 14px;
     padding-bottom: 7px;
+    padding: 0.5rem 0 0.5rem 1.5rem;
 }
+.meet h2{
+    color: #3d3d3d;
+    font-size: 14px;
+    font-weight: 600;
+    padding-bottom: 0.7rem;
+    cursor: pointer;
+  
+}
+
+
+
 
 .left-nav .meet a i{
     color: #767676;
@@ -404,24 +404,30 @@ header.global-nav{
 
 
 
- .meet h2{
+.left-nav .meet-arrow{
+    margin-bottom: 3px;
+    width: 100%;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    box-shadow: inset 0px 1px 0px rgba(100, 121, 143, 0.122);
+   
+   
+
+   }
+
+.left-nav .meet-arrow h2 {
     color: #3d3d3d;
     font-size: 14px;
     font-weight: 600;
     padding-bottom: 0.7rem;
     cursor: pointer;
-  
-}
-/*
-.meet h2 i{
-   
-    margin: 10px;
-    margin-top: -20px;
-    
+    background-color: white;
     
 }
-.meet h2 i:hover{
-    background-color: rgba(0,0,0,0.1);
-    border-radius: 1px
 
-} */
+.left-nav .meet-arrow h2:hover{
+    background-color: rgba(75, 75, 75, 0.1);
+
+}
+.left-nav .meet-arrow h2 i:hover{
+    background-color: rgba(4, 4, 4, 0.1);
+}
