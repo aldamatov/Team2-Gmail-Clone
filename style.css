@@ -3,6 +3,28 @@
     padding: 0;
     box-sizing: border-box;
 }
+::-webkit-scrollbar {
+   height: 3px;
+    width: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+    
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(83, 79, 79); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #736f6f; 
+  }
 
 @font-face {
     font-family: 'Google-font';
@@ -12,6 +34,7 @@
     font-family: 'Roboto';
     src: url(/assets/Roboto-Regular.ttf);
 }
+/* Global Start */
 body{
     font-family: "Google-font", sans-serif;
     font-size: 1.2rem;
@@ -20,6 +43,14 @@ body{
     background-color: #fff;
     overflow-x: hidden;
 }
+a{
+    text-decoration: none;
+
+}
+/* Global End */
+
+
+/* Header Nav Start */
 header.global-nav{
     display: flex;
     flex-flow: row nowrap;
@@ -137,6 +168,7 @@ header.global-nav{
     
 }
 .down{
+    vertical-align:text-bottom;
     margin: 5px;
 
 }
@@ -180,6 +212,9 @@ header.global-nav{
 .profile:hover{
     background-color: #ebecec;
 }
+/* Header End */
+
+/* Main Section Start */
 .flex-container{
     display: flex;
     flex-flow: row nowrap;
@@ -197,6 +232,7 @@ header.global-nav{
     font-size: 0.889rem;
     letter-spacing: 0.2px;
     background-color: #fff;
+    padding-right: 10px;
 }
 
 .left-nav .compose{
@@ -223,12 +259,33 @@ header.global-nav{
 
 
 }
-a{
-    text-decoration: none;
-}
+
 .left-nav .btn a:hover{
     background-color: #fafafb;
     box-shadow: 0px 1px 3px 0 rgba(60, 64, 67, 0.3), 0 4px 8px 3px rgba(60, 64, 67, 0.15);
+}
+
+.nav-list .mail-arrow{
+    margin-bottom: 3px;
+    width: 100%;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    box-shadow: inset 0px 1px 0px rgba(100, 121, 143, 0.122);
+    position: sticky;
+    top: 0;
+    margin-left: 7px;
+   
+
+   }
+
+.nav-list .mail-arrow h2 {
+    color: #3d3d3d;
+    font-size: 14px;
+    font-weight: 600;
+    padding-bottom: 0.7rem;
+    cursor: pointer;
+    position: sticky;
+    background-color: white;
+    
 }
 
 .compose i{
@@ -242,3 +299,129 @@ a{
     margin-top: -1px;
     color: red;
 }
+.nav-list{
+   height: 400px;
+}
+.left-nav .nav-list ul{
+    list-style: none;
+    height: 70%;
+    overflow: hidden;
+    line-height: 1.6rem;
+}
+
+.left-nav .nav-list ul:hover{
+    overflow-y: scroll;
+}
+.nav-list ul{
+    padding: 0;
+    margin: 0;
+}
+.nav-list ul a{
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    padding-left: 1.6rem;
+    width: 100%;
+    color: #555;
+    justify-content:flex-start;
+    font-size: 14px;
+    padding-bottom: 2px;
+}
+.nav-list a:hover{
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 0px 25px 25px 0;
+}
+.left-nav .nav-list .important{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #d93025;
+    font-weight: bold ;
+    background-color: rgb(252, 232, 230);
+    border-radius: 0 25px 25px 0;
+    max-width: 240px;
+}
+.red-color{
+    color: #d93025 !important;
+}
+
+.left-nav .nav-list a i{
+    color: #767676;
+    font-size: 1rem;
+    margin-right: 1.2rem;
+
+}
+.nav-list .count{
+    font-size: 0.8rem;
+    padding-left: 90px;
+}
+/* Meet Section Start */
+
+.meet{
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    box-shadow: inset 0px 1px 0px rgba(100, 121, 143, 0.122);
+    padding: 0.5rem 0 0.5rem 1.5rem;
+}
+.nav-list .meet{
+    margin-bottom: 3px;
+    width: 100%;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    box-shadow: inset 0px 1px 0px rgba(100, 121, 143, 0.122);
+   
+  
+    margin-left: 7px;
+   }
+
+.nav-list .meet h2 {
+    color: #3d3d3d;
+    font-size: 14px;
+    font-weight: 600;
+    padding-bottom: 0.7rem;
+    cursor: pointer;
+    position: sticky;
+    background-color: white;
+    
+}
+.left-nav .meet a{
+    display: block;
+    color: #555;
+    font-size: 14px;
+    padding-bottom: 7px;
+}
+
+.left-nav .meet a i{
+    color: #767676;
+    font-size: 1rem;
+    margin-right: 1.2rem;
+    text-align: center;
+
+}
+.meet a:hover{
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 0px 25px 25px 0;
+}
+
+
+
+ .meet h2{
+    color: #3d3d3d;
+    font-size: 14px;
+    font-weight: 600;
+    padding-bottom: 0.7rem;
+    cursor: pointer;
+  
+}
+/*
+.meet h2 i{
+   
+    margin: 10px;
+    margin-top: -20px;
+    
+    
+}
+.meet h2 i:hover{
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 1px
+
+} */
