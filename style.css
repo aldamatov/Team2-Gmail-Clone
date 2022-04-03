@@ -224,10 +224,9 @@ header.global-nav{
     display: flex;
     flex-flow: column nowrap;
     flex: 0 0 19%;
-    height: 89vh;
-    border: 1px solid black;
+    height: 88.7vh;
     position: sticky;
-    top: 60px;
+    top: 65px;
     font-family: 'Roboto', sans-serif;
     font-size: 0.889rem;
     letter-spacing: 0.2px;
@@ -288,6 +287,7 @@ header.global-nav{
     box-shadow: inset 0px 1px 0px rgba(100, 121, 143, 0.122);
     position: sticky;
     top: 0;
+    margin-top: 10px;
     
    }
 
@@ -414,7 +414,7 @@ header.global-nav{
 
    }
 
-.left-nav .meet-arrow h2 {
+.left-nav .meet-arrow h2, .left-nav .hangouts h2 {
     color: #3d3d3d;
     font-size: 14px;
     font-weight: 600;
@@ -430,4 +430,68 @@ header.global-nav{
 }
 .left-nav .meet-arrow h2 i:hover{
     background-color: rgba(4, 4, 4, 0.1);
+}
+
+
+.left-nav .hangouts{
+    padding: 0.5rem 0 1rem 1.5rem;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.left-nav .hangouts img{
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.left-nav .user{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.hangouts a{
+    margin-left: 37%;
+}
+
+
+.main-content{
+    flex: 0 0 77%;
+    width: 100%;
+    max-width: 1100px;
+    height: 100%;
+}
+.right-nav{
+    flex: 0 0 4%;
+    display: flex;
+    height: 85vh;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 1px solid #f1f3f4;
+    padding-top: 1.5rem;
+    position: sticky;
+    top: 10vh;
+    right: 0;
+    background-color: #fff;
+}
+
+
+
+.col-1{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    height: 100%;
+}
+.col-1 img{
+    width: 20px;
+    height: 20px;
+    margin-bottom: 2rem;
+}
+.col-2{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    color: #5f5757;
 }
