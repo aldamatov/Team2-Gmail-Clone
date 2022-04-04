@@ -1166,4 +1166,4 @@ export const primary = [
       },
     ],
   },
-];
+]; 
