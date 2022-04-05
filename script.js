@@ -6,6 +6,9 @@ console.log(allInbox);
 
 
 
+
+
+
 /* Tabs */
 const tabs = document.querySelectorAll('[data-tab-target]')
 const tabContents = document.querySelectorAll('[data-tab-content]')
@@ -24,3 +27,4 @@ tabs.forEach(tab => {
     target.classList.add('active')
   })
 })
+/* End Tabs */
