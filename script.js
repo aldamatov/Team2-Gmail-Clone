@@ -18,9 +18,10 @@ function createPrimaryEmails(emails){
       hour12: true,
 
     })
-    const eachEmail = `
-                <div class="mail-container tooltip">
-                           <span class="tooltiptext">${email.senderEmail}</span>
+    //<span class="tooltiptext">${email.senderEmail}</span> 
+        const eachEmail = `
+                <div class="mail-container">
+                           
                    
                       <div class="mail-icons-left">
                              <input type="checkbox" name="check-${email.id}" id="${email.id}">
