@@ -1,127 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/regular.min.css" integrity="sha512-YoxvmIzlVlt4nYJ6QwBqDzFc+2aXL7yQwkAuscf2ZAg7daNQxlgQHV+LLRHnRXFWPHRvXhJuBBjQqHAqRFkcVw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css" integrity="sha512-OivR4OdSsE1onDm/i3J3Hpsm5GmOVvr9r49K3jJ0dnsxVzZgaOJ5MfxEAxCyGrzWozL9uJGKz6un3A7L+redIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/regular.min.css"
+      integrity="sha512-YoxvmIzlVlt4nYJ6QwBqDzFc+2aXL7yQwkAuscf2ZAg7daNQxlgQHV+LLRHnRXFWPHRvXhJuBBjQqHAqRFkcVw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css"
+      integrity="sha512-OivR4OdSsE1onDm/i3J3Hpsm5GmOVvr9r49K3jJ0dnsxVzZgaOJ5MfxEAxCyGrzWozL9uJGKz6un3A7L+redIQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Inbox (6,112) - team2@gmail.com</title>
-    <link rel="icon" href="https://i0.wp.com/pinkeyegraphics.co.uk/wp-content/uploads/icon-google-gmail-new-329x329-1.png?fit=329%2C329&ssl=1" type="image/gif">
-</head>
-<body>
-     <!-- Header -->
-    <header class="global-nav"> 
-        <div class="global-nav-left-part">
-            <i class="fa-solid fa-bars"  ></i>
-            <img height="40px" src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_2x_r2.png" alt="Gmail Logo">
-        </div>
-        <div class="search-global">
-            <i class="fa-solid fa-magnifying-glass glass"></i>
-            <input type="text" placeholder="Search all conversations">
-            <i  class="fa-solid fa-sliders  slider"></i>
+    <link
+      rel="icon"
+      href="https://i0.wp.com/pinkeyegraphics.co.uk/wp-content/uploads/icon-google-gmail-new-329x329-1.png?fit=329%2C329&ssl=1"
+      type="image/gif"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="global-nav">
+      <div class="global-nav-left-part">
+        <i class="fa-solid fa-bars"></i>
+        <img
+          height="40px"
+          src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_2x_r2.png"
+          alt="Gmail Logo"
+        />
+      </div>
+      <div class="search-global">
+        <i class="fa-solid fa-magnifying-glass glass"></i>
+        <input type="text" id="search" placeholder="Search all conversations" />
+        <i class="fa-solid fa-sliders slider"></i>
+      </div>
+      <div class="global-nav-right-part">
+        <button class="active-btn">
+          <i class="fa-solid fa-circle fa-xs green-dot"></i>
+          Active <i class="fa-solid fa-sort-down down"></i>
+        </button>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          fill="currentColor"
+          class="bi bi-question-circle"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+          />
+          <path
+            d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"
+          />
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          fill="currentColor"
+          class="bi bi-gear"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"
+          />
+          <path
+            d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"
+          />
+        </svg>
 
-        </div>
-        <div class="global-nav-right-part">
-         <button class="active-btn" >
-                <i class="fa-solid fa-circle fa-xs green-dot"></i>
-                Active <i class="fa-solid fa-sort-down down"></i>
-            </button>
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-question-circle" viewBox="0 0 16 16">
-                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                    <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
-                  </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
-                <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
-                <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
-              </svg>
-           
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-grid-3x3-gap-fill" viewBox="0 0 16 16">
-                    <path d="M1 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2zM1 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V7zM1 12a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2z"/>
-                  </svg>
-                <img class="profile" src="/img/Profile2.jpg" alt="Profile Photo">             
-              
-        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          fill="currentColor"
+          class="bi bi-grid-3x3-gap-fill"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M1 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2zM1 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V7zM1 12a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2z"
+          />
+        </svg>
+        <img class="profile" src="/img/Profile2.jpg" alt="Profile Photo" />
+      </div>
     </header>
-
 
     <!-- Section -->
     <section class="main-container">
-        <div class="flex-container">
-            <!-- Left Nav Bar -->
-            <aside class="left-nav">
-                <div class="compose">
-                    <div class="btn">
-                        <a href="#"><i class='fas fa-pen' style='font-size:20px;color:red'></i>
-                        <p>Compose</p></a>
-                    </div>
-                </div>
-                <div class="nav-list">
-                    <div class="mail-arrow"> <h2><i class="fa-solid fa-sort-down down"></i>Mail</h2></div>
-                   <ul>
-                    <li><a href="#" class="important"><i class="fa-solid fa-inbox fa-lg red-color"></i><span class="header">Inbox</span><span class="count">6,112</span></a></li>
-                    <li><a href="#"><i class="fa-regular fa-star fa-lg"></i>Starred </a></li>
-                    <li><a href="#"><i class="fa-regular fa-clock fa-lg"></i>Snoozed </a></li>
-                    <li><a href="#"><i class="fa-regular fa-flag fa-lg"></i>Important</a></li>
-                    <li><a href="#"><i class="fa-regular fa-paper-plane fa-lg"></i>Sent</a></li>
-                    <li><a href="#"><i class="fa-regular fa-file fa-lg"></i><span class="align-center">&nbspDraft</span> </a></li>
-                    <li><a href="#"><i class="fa-regular fa-comment fa-lg"></i>Chats</a></li>
-                    <li><a href="#"><i class="fa-solid fa-calendar-plus fa-lg"></i>Schedule</a></li>
-                    <li><a href="#"><i class="fa-solid fa-envelope fa-lg"></i>All Mail</a></li>
-                </ul>
-                </div>
-              
-                <div class="meet">
-                    
-                    <div class="meet-arrow"> <h2><i class="fa-solid fa-sort-down down"></i>Meet</h2></div>
-                    <a href="#"><i class="fa-solid fa-video"></i>New meeting</a>
-                    <a href="#"><i class="fa-regular fa-keyboard"></i>Join Meeting</a>
-               
-                </div>
+      <div class="flex-container">
+        <!-- Left Nav Bar -->
+        <aside class="left-nav">
+          <div class="compose">
+            <div class="btn">
+              <a href="#"
+                ><i class="fas fa-pen" style="font-size: 20px; color: red"></i>
+                <p>Compose</p></a
+              >
+            </div>
+          </div>
+          <div class="nav-list">
+            <div class="mail-arrow">
+              <h2><i class="fa-solid fa-sort-down down"></i>Mail</h2>
+            </div>
+            <ul>
+              <li>
+                <a href="#" class="important"
+                  ><i class="fa-solid fa-inbox fa-lg red-color"></i
+                  ><span class="header">Inbox</span
+                  ><span class="count">6,112</span></a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fa-regular fa-star fa-lg"></i>Starred </a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-regular fa-clock fa-lg"></i>Snoozed
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-regular fa-flag fa-lg"></i>Important</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-regular fa-paper-plane fa-lg"></i>Sent</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-regular fa-file fa-lg"></i
+                  ><span class="align-center">&nbspDraft</span>
+                </a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-regular fa-comment fa-lg"></i>Chats</a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-solid fa-calendar-plus fa-lg"></i>Schedule</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-solid fa-envelope fa-lg"></i>All Mail</a
+                >
+              </li>
+            </ul>
+          </div>
 
-                <div class="hangouts">
-                    <h2>Chats</h2>
-                    <div class="user"><img src="./img/Profile2.jpg" alt="">Team2
-                    <i class="fas fa-sort-down down"></i>
-                    <a href="#"><i class="fas fa-plus"></i></a></div>
-                  
-                    
-                </div>
-            </aside>
-            <main class="main-content">
-                <div class="content-nav"> 
-                    <div class="left-icons">
-                        <div class="select">
-                            <input type="checkbox">
-                            <i class="fas fa-caret-down"></i>
-                        </div>
-                            <i class="fas fa-redo-alt"></i>
-                            <i class="fas fa-ellipsis-v"></i>
-                    </div>    
-                    <div class="right-icons">
-                        <span class="order">1-50 of 6,112</span>
-                        <i class="fas fa-chevron-left"></i>
-                        <i class="fas fa-chevron-right"></i>
+          <div class="meet">
+            <div class="meet-arrow">
+              <h2><i class="fa-solid fa-sort-down down"></i>Meet</h2>
+            </div>
+            <a href="#"><i class="fa-solid fa-video"></i>New meeting</a>
+            <a href="#"><i class="fa-regular fa-keyboard"></i>Join Meeting</a>
+          </div>
 
-                    </div>    
-                </div>
-                <div class="mail-box">
-                    <div class="mail-header">
-                        <ul class="tabs">
-                            <li data-tab-target="#primary" id="primary-tab" class="prime tab"><i class="fa-solid fa-inbox fa-lg"></i> Primary</li>
-                            <li data-tab-target="#social" id="social-tab" class="tab"><i class="fa-solid fa-user-group"></i>Social</li>
-                            <li data-tab-target="#promo" id="promo-tab" class="tab"><i class="fas fa-tag"></i>Promotions</li>
-                          </ul>
+          <div class="hangouts">
+            <h2>Chats</h2>
+            <div class="user">
+              <img src="./img/Profile2.jpg" alt="" />Team2
+              <i class="fas fa-sort-down down"></i>
+              <a href="#"><i class="fas fa-plus"></i></a>
+            </div>
+          </div>
+        </aside>
+        <main class="main-content">
+          <div class="content-nav">
+            <div class="left-icons">
+              <div class="select">
+                <input type="checkbox" />
+                <i class="fas fa-caret-down"></i>
+              </div>
+              <i class="fas fa-redo-alt"></i>
+              <i class="fas fa-ellipsis-v"></i>
+            </div>
+            <div class="right-icons">
+              <span class="order">1-50 of 6,112</span>
+              <i class="fas fa-chevron-left" id="prev"></i>
+              <i class="fas fa-chevron-right" id="next"></i>
+            </div>
+          </div>
+          <div class="mail-box">
+            <div class="mail-header">
+              <ul class="tabs">
+                <li
+                  data-tab-target="#primary"
+                  id="primary-tab"
+                  class="prime tab"
+                >
+                  <i class="fa-solid fa-inbox fa-lg"></i> Primary
+                </li>
+                <li data-tab-target="#social" id="social-tab" class="tab">
+                  <i class="fa-solid fa-user-group"></i>Social
+                </li>
+                <li data-tab-target="#promo" id="promo-tab" class="tab">
+                  <i class="fas fa-tag"></i>Promotions
+                </li>
+              </ul>
+            </div>
 
-                    </div>
-                                          
-                        <div class="tab-content">
-                            <div id="primary" data-tab-content class="active mail-list ">
-                            <!-- Single Email Design -->
-                              <!-- <div class="mail-container">
+            <div class="tab-content">
+              <div id="primary" data-tab-content class="active mail-list">
+                <!-- Single Email Design -->
+                <!-- <div class="mail-container">
                                   <div class="mail-icons-left">
                                       <input type="checkbox" name="mail" id="mail">
                                       <i class="fa-regular fa-star"></i>
@@ -139,48 +240,36 @@
                                   </div>
                                   <div class="time-date">8:35 PM</div>
                               </div> -->
-                              <!-- Single Email Design End -->
-                            </div>
+                <!-- Single Email Design End -->
+              </div>
 
-                            <div id="social" data-tab-content class="mail-list">
-                             
-                            </div>
-                            <div id="promo" data-tab-content class="mail-list">
-                           
-                            </div>
-                          </div>
-                    
-                </div>
-                <div class="content-footers">
-                    <ul class="content-footer ">
-                        <li><a href="#">Terms</a></li>
-                        <li><a href="#">Privacy</a></li>
-                        <li><a href="#">Programme Policies</a></li>
-                    </ul>
-                </div>
-              
-            </main>
-            <aside class="right-nav">
-                <div class="col-1">
-                    <img src="/img/Calendar.png" alt="Calendar">
-                    <img src="/img/Keep.png" alt="Keep">
-                    <img src="/img/Tasks.png" alt="Tasks">
-                    <img src="/img/Contact.png" alt="Contact">
-                </div>
-                <div class="col-2">
-                    <i class="fas fa-plus fa-xs"></i>
-                    <i class="fas fa-chevron-right fa-xs"></i>
-                </div>
-            </aside>
-        </div>
+              <div id="social" data-tab-content class="mail-list"></div>
+              <div id="promo" data-tab-content class="mail-list"></div>
+            </div>
+          </div>
+          <div class="content-footers">
+            <ul class="content-footer">
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Programme Policies</a></li>
+            </ul>
+          </div>
+        </main>
+        <aside class="right-nav">
+          <div class="col-1">
+            <img src="/img/Calendar.png" alt="Calendar" />
+            <img src="/img/Keep.png" alt="Keep" />
+            <img src="/img/Tasks.png" alt="Tasks" />
+            <img src="/img/Contact.png" alt="Contact" />
+          </div>
+          <div class="col-2">
+            <i class="fas fa-plus fa-xs"></i>
+            <i class="fas fa-chevron-right fa-xs"></i>
+          </div>
+        </aside>
+      </div>
     </section>
 
-    
-
-
-
-    <script type="module"  src="script.js"></script>
-   
-    
-</body>
+    <script type="module" src="script.js"></script>
+  </body>
 </html>
